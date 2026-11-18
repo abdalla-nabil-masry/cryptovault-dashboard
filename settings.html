@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CryptoVault | Settings</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<input type="checkbox" id="light-mode" class="visually-hidden" aria-label="Light mode">
+<div class="app">
+  <aside class="sidebar">
+    <a href="index.html" class="logo"><b>CV</b> CryptoVault</a>
+    <nav class="nav">
+      <p class="nav-label">MAIN MENU</p>
+      <a href="index.html" ><span class="ico">▦</span>Dashboard</a>
+      <a href="#"><span class="ico">↗</span>Markets</a>
+      <a href="#"><span class="ico">▭</span>Wallet</a>
+      <p class="nav-label">ACCOUNT</p>
+      <a href="settings.html" class="active"><span class="ico">⚙</span>Settings</a>
+    </nav>
+    <div class="side-foot">
+      <label for="light-mode" class="theme">☀ Light Mode <span class="switch switch--light"></span></label>
+      <a href="login.html" class="logout">⎋ Logout</a>
+    </div>
+  </aside>
+  <main class="main">
+    <header class="topbar">
+      <div><h1>Settings</h1><p>Manage your account preferences and security</p></div>
+      <div class="tools">
+        <label class="search">🔍<input type="search" placeholder="Search..."></label>
+        <button class="bell" type="button" aria-label="Notifications">🔔<sup>3</sup></button>
+        <div class="user"><span class="avatar">AM</span><div><strong>Alex Morgan</strong><small>Pro Trader</small></div></div>
+      </div>
+    </header>
+    <nav class="tabs" aria-label="Settings tabs">
+      <a href="#">Profile</a><a href="#">Security</a><a href="#">Notifications</a><a href="#" class="active">Preferences</a><a href="#">Connected</a>
+    </nav>
+
+    <section class="card">
+      <div class="card-head"><h2>Display Preferences</h2><small>Customize how the app looks and behaves</small></div>
+      <form>
+        <div class="form-grid">
+          <label class="field">Currency
+            <select><option>USD - US Dollar</option><option>EUR - Euro</option><option>EGP - Egyptian Pound</option><option>GBP - British Pound</option></select></label>
+          <label class="field">Language
+            <select><option>English</option><option>العربية</option><option>Français</option></select></label>
+          <label class="field">Timezone
+            <select><option>Eastern Time (ET)</option><option>Cairo (EET)</option><option>London (GMT)</option><option>Pacific Time (PT)</option></select></label>
+          <label class="field">Date Format
+            <select><option>MM/DD/YYYY</option><option>DD/MM/YYYY</option><option>YYYY-MM-DD</option></select></label>
+        </div>
+
+        <label class="row" for="light-mode"><span><strong>Dark Mode</strong><small>Use dark theme for the interface</small></span><span class="switch switch--dark"></span></label>
+        <label class="row" for="compact"><span><strong>Compact View</strong><small>Show more data with smaller elements</small></span><input type="checkbox" id="compact" class="visually-hidden"><span class="switch"></span></label>
+
+        <div class="actions">
+          <button type="button" class="btn btn--primary">Save Preferences</button>
+          <button type="reset" class="btn">Reset to Default</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</div>
+</body>
+</html>

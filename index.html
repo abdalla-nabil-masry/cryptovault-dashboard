@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CryptoVault | Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<input type="checkbox" id="light-mode" class="visually-hidden" aria-label="Light mode">
+<div class="app">
+  <aside class="sidebar">
+    <a href="index.html" class="logo"><b>CV</b> CryptoVault</a>
+    <nav class="nav">
+      <p class="nav-label">MAIN MENU</p>
+      <a href="index.html" class="active"><span class="ico">▦</span>Dashboard</a>
+      <a href="#"><span class="ico">↗</span>Markets</a>
+      <a href="#"><span class="ico">▭</span>Wallet</a>
+      <p class="nav-label">ACCOUNT</p>
+      <a href="settings.html" ><span class="ico">⚙</span>Settings</a>
+    </nav>
+    <div class="side-foot">
+      <label for="light-mode" class="theme">☀ Light Mode <span class="switch switch--light"></span></label>
+      <a href="login.html" class="logout">⎋ Logout</a>
+    </div>
+  </aside>
+  <main class="main">
+    <header class="topbar">
+      <div><h1>Dashboard</h1><p>Welcome back! Here's your portfolio overview.</p></div>
+      <div class="tools">
+        <label class="search">🔍<input type="search" placeholder="Search..."></label>
+        <button class="bell" type="button" aria-label="Notifications">🔔<sup>3</sup></button>
+        <div class="user"><span class="avatar">AM</span><div><strong>Alex Morgan</strong><small>Pro Trader</small></div></div>
+      </div>
+    </header>
+    <section class="grid">
+      <article class="card portfolio">
+        <div class="card-head"><h2>Portfolio Overview</h2><div class="pills"><span class="on">1D</span><span>1W</span><span>1M</span><span>1Y</span></div></div>
+        <svg class="line" viewBox="0 0 300 100" preserveAspectRatio="none" aria-hidden="true">
+          <path class="area" d="M0 80 L50 70 L100 76 L150 55 L200 60 L250 40 L300 28 V100 H0Z"/>
+          <polyline class="stroke" points="0,80 50,70 100,76 150,55 200,60 250,40 300,28"/>
+        </svg>
+        <div class="days"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+      </article>
+
+      <article class="card perf">
+        <div class="card-head"><h2>Asset Performance</h2><div class="pills"><span class="on">Week</span><span>Month</span><span>Year</span></div></div>
+        <div class="bars" aria-hidden="true"><i style="--h:70%"></i><i style="--h:55%"></i><i style="--h:85%"></i><i class="down" style="--h:30%"></i><i style="--h:60%"></i><i class="down" style="--h:25%"></i><i style="--h:50%"></i></div>
+        <div class="days"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+      </article>
+
+      <section class="stats" aria-label="Statistics">
+        <article class="stat stat--main"><span class="ico">$</span><div><small>Total Balance</small><strong>$84,254.32</strong><small>+12.5% this month</small></div></article>
+        <article class="stat"><span class="ico">↗</span><div><small>Total Profit</small><strong>$12,847.00</strong><small>+8.2% vs last week</small></div></article>
+        <article class="stat"><span class="ico">◷</span><div><small>Pending Orders</small><strong>7</strong><small>3 buy, 4 sell</small></div></article>
+        <article class="stat"><span class="ico">◈</span><div><small>Active Assets</small><strong>12</strong><small>Across 4 wallets</small></div></article>
+      </section>
+
+      <article class="card btc">
+        <div class="card-head"><h2>BTC/USD <span>$43,256.00</span></h2><span class="change">+2.34%</span></div>
+        <div class="candles" aria-hidden="true"><i style="--h:40px;--y:-6px"></i><i class="down" style="--h:30px;--y:4px"></i><i style="--h:50px;--y:-10px"></i><i style="--h:35px;--y:0px"></i><i class="down" style="--h:45px;--y:6px"></i><i style="--h:30px;--y:-8px"></i><i style="--h:55px;--y:-12px"></i><i class="down" style="--h:25px;--y:4px"></i><i style="--h:40px;--y:-6px"></i><i style="--h:50px;--y:-10px"></i></div>
+      </article>
+
+      <article class="card eth">
+        <div class="card-head"><h2>ETH/USD <span>$2,284.50</span></h2><span class="change">+1.87%</span></div>
+        <div class="candles" aria-hidden="true"><i class="down" style="--h:35px;--y:4px"></i><i style="--h:45px;--y:-8px"></i><i style="--h:30px;--y:-2px"></i><i class="down" style="--h:50px;--y:6px"></i><i style="--h:40px;--y:-6px"></i><i style="--h:55px;--y:-12px"></i><i class="down" style="--h:30px;--y:4px"></i><i style="--h:45px;--y:-8px"></i><i style="--h:35px;--y:0px"></i><i style="--h:50px;--y:-10px"></i></div>
+      </article>
+
+      <article class="card alloc">
+        <div class="card-head"><h2>Asset Allocation</h2></div>
+        <div class="body"><div class="donut" aria-hidden="true"></div>
+          <ul class="legend"><li>BTC 45%</li><li>ETH 25%</li><li>SOL 20%</li><li>Other 10%</li></ul></div>
+      </article>
+
+      <article class="card health">
+        <div class="card-head"><h2>Portfolio Health</h2></div>
+        <strong class="big">82%</strong>
+        <div class="bar"><i style="--w:82%"></i></div>
+        <small>Good – well diversified</small>
+      </article>
+
+      <article class="card risk">
+        <div class="card-head"><h2>Risk Level</h2></div>
+        <strong class="big">Medium</strong>
+        <div class="meter"><i class="on"></i><i class="on"></i><i></i></div>
+        <small>Low · Medium · High</small>
+      </article>
+    </section>
+  </main>
+</div>
+</body>
+</html>
